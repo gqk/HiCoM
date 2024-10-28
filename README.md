@@ -18,4 +18,4 @@
 
 ## News
 - [2024/10/29] Camera ready is submitted. 
-- [2023/09/26] Accepted to NeurIPS 2024 as poster presentation!
+- [2024/09/26] Accepted to NeurIPS 2024 as poster presentation!
