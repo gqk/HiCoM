@@ -19,3 +19,11 @@
 ## 🗞️ News
 - [2024/10/29] Camera ready is submitted. 
 - [2024/09/26] Accepted to NeurIPS 2024 as poster presentation!
+
+<table>
+  <tr>
+    <td align="center">
+      <b>⏳ Notice:</b> We are in the process of applying for a related patent. The code will be released once the application process is complete. Thank you for your patience!
+    </td>
+  </tr>
+</table>
