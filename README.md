@@ -8,7 +8,7 @@
 <sup>2</sup>Peng Cheng Laboratory  
 <sup>3</sup>Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, <br /> Peking University Shenzhen Graduate School
 
-[[`Paper`](https://nips.cc/virtual/2024/poster/96081)] [[`Code coming soon`](#)]
+[[`Paper`](https://arxiv.org/pdf/2411.07541)] [[`Code coming soon`](#)]
 
 <br />
 
@@ -20,10 +20,6 @@
 - [2024/10/29] Camera ready is submitted. 
 - [2024/09/26] Accepted to NeurIPS 2024 as poster presentation!
 
-<table>
-  <tr>
-    <td align="center">
-      <b>⏳ Notice:</b> We are in the process of applying for a related patent. The code will be released once the application process is complete. Thank you for your patience!
-    </td>
-  </tr>
-</table>
+## 🙌 Acknowledgement
+
+- The upcoming code release will be based on this framework: https://github.com/Awesome3DGS/LibGS
