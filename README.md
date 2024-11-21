@@ -8,7 +8,7 @@
 <sup>2</sup>Peng Cheng Laboratory  
 <sup>3</sup>Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, <br /> Peking University Shenzhen Graduate School
 
-[[`Paper`](https://arxiv.org/pdf/2411.07541)] [[`Code coming soon`](#)]
+[[`Paper`](https://arxiv.org/pdf/2411.07541)] [`Code coming soon`]
 
 <br />
 
