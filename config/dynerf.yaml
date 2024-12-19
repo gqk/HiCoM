@@ -1,0 +1,79 @@
+output_dir: output
+experiment_name: '2024-11-28'
+mode: train
+ckpt_path: null
+trainer:
+  cache_data_on_device: true
+  testing_steps: []
+  saving_ckpt_steps: []
+  saving_ckpt_every_n_frames: 1000
+  num_init_steps: 15000
+  num_incr_steps: 200
+data:
+  root: ''
+  resolution: -1
+  white_background: false
+  split_train_test: true
+  shuffle: true
+  eval_train: true
+  eval_test: true
+  extra_dataset_kwargs: {}
+  extra_dataloader_kwargs: {}
+module:
+  sh_degree: 3
+  random_background: false
+  lambda_dssim: 0.2
+  lambda_deform: 1.0
+  noise_scale: 0.01
+  saving_gs_steps: []
+  saving_gs_every_n_frames: 1000
+  num_saving_images: 5
+  full_eval: false
+  merge_to_base: true
+  densify:
+    from_step: 500
+    until_step: 5000
+    interval: 100
+    grad_threshold: 0.0002
+    opacity_reset_interval: 30000
+    max_gaussians: 10000000
+  gaussian:
+    position_lr_init: 0.00016
+    position_lr_final: 1.6e-06
+    position_lr_delay_mult: 0.01
+    position_lr_max_steps: 15000
+    feature_lr: 0.0025
+    opacity_lr: 0.05
+    scaling_lr: 0.005
+    rotation_lr: 0.001
+    percent_dense: 0.01
+  gaussian_stage2:
+    position_lr_init: 0.0024
+    position_lr_final: 2.4e-05
+    position_lr_delay_mult: 0.01
+    position_lr_max_steps: 15000
+    feature_lr: 0.0375
+    opacity_lr: 0.75
+    scaling_lr: 0.075
+    rotation_lr: 0.015
+    percent_dense: 0.01
+  renderer:
+    compute_cov3D_python: false
+    convert_SHs_python: false
+    debug_from: -1
+    debug: false
+  deformation:
+    quantile: 0.05
+    lr: 0.0005
+    num_stage1_steps: 100
+    max_gs_per_grid: 5
+    num_grid_levels: 3
+    grid_level_ratio: 2
+    momentum: 0.6
+    densify_interval: 40
+    densify_grad_threshold: 0.00015
+    opacity_threshold: 0.01
+gui_ip: 127.0.0.1
+gui_port: 6009
+detect_anomaly: false
+quiet: false

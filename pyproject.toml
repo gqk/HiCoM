@@ -1,0 +1,46 @@
+[project]
+name = "hicom"
+version = "0.0.1"
+requires-python = ">=3.8"
+dependencies = [
+    "libgs @ git+https://github.com/Awesome3DGS/LibGS"
+]
+
+[project.optional-dependencies]
+dev = [
+  "autoflake>=2.2.1",
+  "black>=23.11.0",
+  "ipython>=7.8.0",
+  "isort>=5.12.0",
+  "pre-commit>=3.5.0",
+]
+
+[tool.setuptools.packages.find]
+include = []
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # The following are specific to Black, you probably don't want those.
+  tests/data
+  | profiling
+)/
+'''
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 88
+skip_gitignore = true
+skip_glob = []
+
+[tool.autoflake]
+expand-star-imports = true
+remove-all-unused-imports = true
+remove-unused-variables = true
+ignore-init-module-imports = true
+recursive = true
+in-place = true
