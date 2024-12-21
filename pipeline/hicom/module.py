@@ -10,6 +10,7 @@ from torchvision.utils import save_image
 
 from libgs.data.types import TensorSpace
 from libgs.metric import psnr, ssim
+from libgs.metric.lpips import LPIPS
 from libgs.model.merged_gaussian import MergedGaussianModel
 from libgs.pipeline import Module as BaseModule
 from libgs.pipeline import ModuleConfig as BaseModuleConfig
